@@ -9,10 +9,11 @@ function UseStateUpload() {
   };
 
   return (
-    <div>
+    <article>
+      <h2>UseState 를 사용한 예제</h2>
       <input type="text" value={input} onChange={handleInputChange} />
       <UploadButton val={input} />
-    </div>
+    </article>
   );
 }
 
