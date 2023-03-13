@@ -1,9 +1,15 @@
+import { Link } from "react-router-dom";
+
 function Nav() {
   return (
     <nav>
       <ol>
-        <li>Home</li>
-        <li>About</li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/useState">useState</Link>
+        </li>
       </ol>
     </nav>
   );
