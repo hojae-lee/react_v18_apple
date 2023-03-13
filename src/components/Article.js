@@ -1,4 +1,5 @@
 import Button from "./Button";
+import UseStateUpload from "./UseStateUpload";
 
 function Article({ topics }) {
   const temp = [];
@@ -16,6 +17,7 @@ function Article({ topics }) {
     <>
       <Button />
       {temp}
+      <UseStateUpload />
     </>
   );
 }
