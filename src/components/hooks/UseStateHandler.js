@@ -1,5 +1,5 @@
 import { useState } from "react";
-import UploadButton from "./UploadButton";
+import UploadButton from "../UploadButton";
 
 function UseStateUpload() {
   const [input, setInput] = useState("");

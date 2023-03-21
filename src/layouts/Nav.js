@@ -10,6 +10,9 @@ function Nav() {
         <li>
           <Link to="/useState">useState</Link>
         </li>
+        <li>
+          <Link to="/useHook">useHook</Link>
+        </li>
       </ol>
     </nav>
   );

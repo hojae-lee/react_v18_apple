@@ -1,4 +1,4 @@
-import UseStateUpload from "../../components/UseStateUpload";
+import UseStateUpload from "../../components/hooks/UseStateHandler";
 
 function UseStateInfo() {
   return (
