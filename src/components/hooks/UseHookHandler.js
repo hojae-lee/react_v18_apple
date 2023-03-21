@@ -13,9 +13,9 @@ function UseHookHandler() {
   };
 
   // 렌더링 될 때마다 실행
-  // useEffect(() => {
-  //   console.log("렌더링✨");
-  // });
+  useEffect(() => {
+    console.log("렌더링✨");
+  });
 
   // // count 변경 될 때
   useEffect(() => {
@@ -28,9 +28,9 @@ function UseHookHandler() {
   }, [name]);
 
   // // 처음 마운팅!
-  // useEffect(() => {
-  //   console.log("마운팅🧨");
-  // }, []);
+  useEffect(() => {
+    console.log("마운팅🧨");
+  }, []);
 
   return (
     <div>
