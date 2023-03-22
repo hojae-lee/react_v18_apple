@@ -1,4 +1,4 @@
-import UseHookHandler from "../../components/hooks/UseHookHandler";
+import UseHookHandler from "../../components/hooks/UseEffectHandler";
 
 function UseStateInfo() {
   return (
