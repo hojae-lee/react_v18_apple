@@ -10,6 +10,7 @@ import Timer from "./components/Timer";
 import UseStateInfo from "./layouts/sample/UseStateInfo";
 import UseHookInfo from "./layouts/sample/UseHookInfo";
 import UseRefInfo from "./layouts/sample/UseRefInfo";
+import UseRefDomInfo from "./layouts/sample/UseRefDomInfo";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -23,6 +24,7 @@ function App() {
         <Route path="/useState" element={<UseStateInfo />}></Route>
         <Route path="/useHook" element={<UseHookInfo />}></Route>
         <Route path="/useRef" element={<UseRefInfo />}></Route>
+        <Route path="/useRefDom" element={<UseRefDomInfo />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
       <div>
