@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./layouts/Header";
 import Nav from "./layouts/Nav";
@@ -11,10 +11,11 @@ import UseStateInfo from "./layouts/sample/UseStateInfo";
 import UseHookInfo from "./layouts/sample/UseHookInfo";
 import UseRefInfo from "./layouts/sample/UseRefInfo";
 import UseRefDomInfo from "./layouts/sample/UseRefDomInfo";
-import UseContextInfo from "./layouts/sample/UseContextInfo";
+import { ThemeContext } from "./components/hooks/UseContextHandler";
 
 function App() {
   const [show, setShow] = useState(false);
+  const [isDark, setIsDark] = useState(false);
 
   return (
     <BrowserRouter>
@@ -26,7 +27,6 @@ function App() {
         <Route path="/useHook" element={<UseHookInfo />}></Route>
         <Route path="/useRef" element={<UseRefInfo />}></Route>
         <Route path="/useRefDom" element={<UseRefDomInfo />}></Route>
-        <Route path="/useContext" element={<UseContextInfo />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
       <div>
@@ -35,7 +35,9 @@ function App() {
           Toggle Timer
         </button>
       </div>
-      <Footer />
+      <ThemeContext.Provider value={{ isDark, setIsDark }}>
+        <Footer />
+      </ThemeContext.Provider>
     </BrowserRouter>
   );
 }

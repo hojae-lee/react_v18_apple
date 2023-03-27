@@ -1,7 +1,3 @@
-import { useState, useContext } from "react";
+import { createContext } from "react";
 
-function UseContextHandler() {
-  return <div></div>;
-}
-
-export default UseContextHandler;
+export const ThemeContext = createContext(null);
