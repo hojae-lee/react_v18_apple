@@ -22,6 +22,10 @@ function Nav() {
       link: "/useRefDom",
       title: "useRefDom",
     },
+    {
+      link: "/useMemo",
+      title: "useMemo",
+    },
   ];
   const temp = [];
 
