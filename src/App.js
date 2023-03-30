@@ -6,7 +6,6 @@ import Nav from "./layouts/Nav";
 import Footer from "./layouts/Footer";
 import NotFound from "./layouts/404";
 import Contents from "./layouts/home/Contents";
-import Timer from "./components/Timer";
 import UseStateInfo from "./layouts/sample/UseStateInfo";
 import UseHookInfo from "./layouts/sample/UseHookInfo";
 import UseRefInfo from "./layouts/sample/UseRefInfo";
@@ -15,7 +14,6 @@ import UseMemoInfo from "./layouts/sample/UseMemoInfo";
 import { ThemeContext } from "./components/hooks/UseContextHandler";
 
 function App() {
-  const [show, setShow] = useState(false);
   const [isDark, setIsDark] = useState(false);
 
   return (
@@ -31,12 +29,6 @@ function App() {
         <Route path="/useMemo" element={<UseMemoInfo />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
-      <div>
-        {show && <Timer />}
-        <button type="button" onClick={() => setShow(!show)}>
-          Toggle Timer
-        </button>
-      </div>
       <ThemeContext.Provider value={{ isDark, setIsDark }}>
         <Footer />
       </ThemeContext.Provider>
