@@ -11,6 +11,7 @@ import UseHookInfo from "./layouts/sample/UseHookInfo";
 import UseRefInfo from "./layouts/sample/UseRefInfo";
 import UseRefDomInfo from "./layouts/sample/UseRefDomInfo";
 import UseMemoInfo from "./layouts/sample/UseMemoInfo";
+import UseCallBackInfo from "./layouts/sample/UseCallBackInfo";
 import { ThemeContext } from "./components/hooks/UseContextHandler";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/useRef" element={<UseRefInfo />}></Route>
         <Route path="/useRefDom" element={<UseRefDomInfo />}></Route>
         <Route path="/useMemo" element={<UseMemoInfo />}></Route>
+        <Route path="/useCallback" element={<UseCallBackInfo />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
       <ThemeContext.Provider value={{ isDark, setIsDark }}>

@@ -27,8 +27,8 @@ function Nav() {
       title: "useMemo",
     },
     {
-      link: "/useCallBack",
-      title: "useCallBack",
+      link: "/useCallback",
+      title: "useCallback",
     },
   ];
   const temp = [];
