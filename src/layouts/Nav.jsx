@@ -30,6 +30,10 @@ function Nav() {
       link: "/useCallback",
       title: "useCallback",
     },
+    {
+      link: "/useReducer",
+      title: "useReducer",
+    },
   ];
   const temp = [];
 
